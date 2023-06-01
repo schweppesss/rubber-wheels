@@ -1,0 +1,53 @@
+.partner__content {
+    gap: 20px;
+}
+
+.partner__descr {
+    font-size: var(--fs-3);
+    color: var(--black);
+    line-height: 24px;
+}
+
+.partner__block {
+    gap: 12px;
+}
+
+.partner__title {
+    color: var(--black);
+}
+
+.partner__points,
+.partner__contacts {
+    gap: 8px;
+}
+
+.partner__point {
+    position: relative;
+
+    padding-left: 13px;
+    align-items: center;
+
+    font-size: var(--fs-3);
+    color: var(--black);
+    line-height: 24px;
+}
+
+.partner__point::before {
+    position: absolute;
+
+    content: '';
+
+    left: 0;
+
+    height: 5px;
+    width: 5px;
+
+    border-radius: 50%;
+    background-color: var(--black);
+}
+
+.partner__contact {
+    font-size: var(--fs-3);
+    color: var(--black);
+    line-height: 24px;
+}

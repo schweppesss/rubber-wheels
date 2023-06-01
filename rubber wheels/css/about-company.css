@@ -1,0 +1,13 @@
+.about-company__content {
+    gap: 32px;
+}
+
+.about-company__descr {
+    font-size: var(--fs-3);
+    color: var(--black);
+    line-height: 24px;
+}
+
+.about-company__descr a {
+    color: var(--blue);
+}

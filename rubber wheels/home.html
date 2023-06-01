@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rubber Wheels</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="css/swiper.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header shadow">
+        <div class="header__wrapper grid">
+            <div class="header__top flex">
+                <div class="header__left-area flex">
+                    <button class="header__action">
+                        <svg viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 1C0 0.447715 0.447715 0 1 0H13C13.5523 0 14 0.447715 14 1C14 1.55228 13.5523 2 13 2H1C0.447716 2 0 1.55228 0 1Z"/>
+                            <path d="M0 13C0 12.4477 0.447715 12 1 12H13C13.5523 12 14 12.4477 14 13C14 13.5523 13.5523 14 13 14H1C0.447716 14 0 13.5523 0 13Z"/>
+                            <path d="M0 7C0 6.44772 0.447715 6 1 6H13C13.5523 6 14 6.44772 14 7C14 7.55228 13.5523 8 13 8H1C0.447716 8 0 7.55228 0 7Z"/>
+                        </svg>
+                    </button>
+                    <a href="#"><img src="img/header-logo.svg" alt="" class="header__logo"></a>
+                </div>
+                <div class="header__right-area flex">
+                    <div class="header__contact flex">
+                        <button class="header__icon flex hover">
+                            <svg class="hover" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.808288 7.6723C1.83488 9.94426 3.58324 12.4056 5.60477 14.4257C7.76095 16.5803 10.1397 18.2866 12.3029 19.2296C13.4807 19.7432 14.5343 20 15.4213 20C16.3031 20 17.0199 19.7456 17.5287 19.2369L19.5692 17.1986C20.189 16.5785 20.1334 15.5147 19.4451 14.8265L16.4384 11.8217C15.7493 11.1338 14.6841 11.0787 14.0646 11.698L13.1284 12.6336C12.8689 12.8275 11.2654 12.3339 9.4615 10.5313C7.65654 8.728 7.16153 7.12459 7.35665 6.86778L8.29394 5.93117C8.91376 5.31145 8.85821 4.24696 8.16983 3.55908L5.16249 0.554622C4.47342 -0.133256 3.40886 -0.189115 2.78869 0.430959L0.748873 2.4693C-0.269628 3.48671 -0.248182 5.33464 0.808288 7.6723ZM1.74347 3.46282L3.78363 1.42448C3.7977 1.41043 3.82582 1.402 3.86203 1.402C3.94149 1.402 4.06208 1.4417 4.1686 1.54815L7.17524 4.55261C7.33063 4.70789 7.34399 4.89303 7.29934 4.93765L6.36205 5.87391C5.19695 7.03887 6.53889 9.59822 8.46691 11.5248C9.42705 12.4839 10.4828 13.2505 11.4398 13.6823C13.0148 14.3933 13.7964 13.9535 14.1216 13.6278L15.0589 12.6916C15.1039 12.6466 15.2884 12.6603 15.4442 12.8152L18.4505 15.82C18.6059 15.9753 18.6192 16.1601 18.5746 16.2047L16.5344 18.2434C15.9684 18.8094 14.5969 18.6966 12.8654 17.9413C10.8594 17.0669 8.63391 15.4652 6.59901 13.4321C4.6928 11.5273 3.04955 9.21669 2.08976 7.09368C1.3142 5.3782 1.18482 4.02106 1.74347 3.46282Z"/>
+                            </svg>
+                        </button>
+                        <span class="header__contact-value">8 (800) 707-1-797</span>
+                    </div>
+                    <div class="header__contact flex">
+                        <button class="header__icon flex hover">
+                            <svg class="hover" viewBox="0 0 20 16" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.52464 1.28C1.86431 1.28 1.31153 1.81618 1.31153 2.48V13.52C1.31153 14.1838 1.86431 14.72 2.52464 14.72H17.4754C18.1357 14.72 18.6885 14.1838 18.6885 13.52V2.48C18.6885 1.81618 18.1357 1.28 17.4754 1.28H2.52464ZM6.003e-05 2.48C6.003e-05 1.11982 1.12923 0 2.52464 0H17.4754C18.8708 0 20 1.11982 20 2.48V13.52C20 14.8802 18.8708 16 17.4754 16H2.52464C1.12923 16 6.003e-05 14.8802 6.003e-05 13.52V2.48Z"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.119034 2.19237C0.327064 1.90304 0.736018 1.83309 1.03246 2.03612L10 8.17814L18.9675 2.03612C19.264 1.83309 19.6729 1.90304 19.881 2.19237C20.089 2.4817 20.0173 2.88084 19.7209 3.08388L10.3767 9.48388C10.1506 9.63871 9.84939 9.63871 9.62333 9.48388L0.279119 3.08388C-0.0173227 2.88084 -0.0889952 2.4817 0.119034 2.19237Z"/>
+                            </svg>
+                        </button>
+                        <span class="header__contact-value">info@rubberwheels.ru</span>
+                    </div>
+                    <a href="#" class="header__basket header__basket--active flex hover">
+                        <svg class="hover" viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.78874 16.5049C3.78874 16.6692 3.8211 16.8318 3.88396 16.9836C3.94682 17.1354 4.03895 17.2733 4.1551 17.3894C4.27125 17.5056 4.40914 17.5977 4.5609 17.6605C4.71265 17.7234 4.87531 17.7558 5.03957 17.7558C5.37131 17.7558 5.68946 17.624 5.92403 17.3894C6.04018 17.2733 6.13232 17.1354 6.19518 16.9836C6.25804 16.8318 6.29039 16.6692 6.29039 16.5049C6.29039 16.1732 6.15861 15.855 5.92403 15.6205C5.68946 15.3859 5.37131 15.2541 5.03957 15.2541C4.70783 15.2541 4.38968 15.3859 4.1551 15.6205C3.92053 15.855 3.78874 16.1732 3.78874 16.5049ZM15.0462 16.5049C15.0462 16.6692 15.0785 16.8318 15.1414 16.9836C15.2042 17.1354 15.2964 17.2733 15.4125 17.3894C15.5287 17.5056 15.6666 17.5977 15.8183 17.6605C15.9701 17.7234 16.1327 17.7558 16.297 17.7558C16.6287 17.7558 16.9469 17.624 17.1814 17.3894C17.2976 17.2733 17.3897 17.1354 17.4526 16.9836C17.5154 16.8318 17.5478 16.6692 17.5478 16.5049C17.5478 16.1732 17.416 15.855 17.1814 15.6205C16.9469 15.3859 16.6287 15.2541 16.297 15.2541C15.9652 15.2541 15.6471 15.3859 15.4125 15.6205C15.1779 15.855 15.0462 16.1732 15.0462 16.5049ZM0 0.869644C0 1.03551 0.0658914 1.19459 0.183179 1.31188C0.300466 1.42916 0.459542 1.49506 0.625412 1.49506H1.92502L2.70178 4.81724L3.78874 10.2508C3.78874 10.2958 3.81001 10.3346 3.81501 10.3784L3.17834 13.2428C3.15776 13.3342 3.15804 13.4291 3.17917 13.5204C3.2003 13.6116 3.24172 13.697 3.30037 13.7701C3.35902 13.8431 3.43339 13.902 3.51794 13.9424C3.60249 13.9828 3.69505 14.0036 3.78874 14.0033H17.9781C18.144 14.0033 18.303 13.9374 18.4203 13.8201C18.5376 13.7028 18.6035 13.5437 18.6035 13.3779C18.6035 13.212 18.5376 13.0529 18.4203 12.9356C18.303 12.8184 18.144 12.7525 17.9781 12.7525H4.56926L4.8557 11.4641C4.91824 11.4741 4.97452 11.5016 5.03957 11.5016H16.4408C17.1313 11.5016 17.5478 11.3653 17.8805 10.5635L19.9119 4.33192C20.2646 3.21494 19.4903 2.74588 18.7986 2.74588H3.78874C3.69118 2.74588 3.60612 2.77965 3.51481 2.80092L3.02949 0.72705C2.99732 0.589651 2.91962 0.467172 2.80903 0.379517C2.69844 0.291862 2.56146 0.244184 2.42034 0.244232H0.625412C0.459542 0.244232 0.300466 0.310124 0.183179 0.427411C0.0658914 0.544699 0 0.703774 0 0.869644ZM3.81376 3.9967H18.7048L16.7085 10.1245C16.6847 10.1783 16.6647 10.217 16.6497 10.2433C16.6084 10.2471 16.5434 10.2508 16.4408 10.2508H5.03957V10.127L5.0158 10.0057L3.81376 3.9967Z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <nav class="header__nav flex">
+                <a href="#" class="header__nav-elem hover">Главная</a>
+                <a href="#" class="header__nav-elem hover">О компании</a>
+                <a href="#" class="header__nav-elem hover">Стать партнёром</a>
+                <a href="#" class="header__nav-elem hover">Контакты</a>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="wrapper grid">
+        <main class="main">
+            <section class="section banner grid">
+                <div class="banner__prev hover">
+                    <svg class="hover" viewBox="0 0 33 20" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M33 10C33 9.39214 32.4699 8.89938 31.8159 8.89938H3.99016C3.33621 8.89938 2.80608 9.39214 2.80608 10C2.80608 10.6079 3.33621 11.1006 3.99016 11.1006H31.8159C32.4699 11.1006 33 10.6079 33 10Z"/>
+                        <path d="M11.5955 0.322364C11.1331 -0.107455 10.3834 -0.107455 9.92098 0.322364L0.346809 9.22174C-0.115601 9.65156 -0.115601 10.3484 0.346809 10.7783L0.402843 10.8303C0.865253 11.2602 1.61497 11.2602 2.07738 10.8303L11.6516 1.93096C12.114 1.50114 12.114 0.80427 11.6516 0.374451L11.5955 0.322364Z"/>
+                        <path d="M11.6516 19.6255C12.114 19.1957 12.114 18.4989 11.6515 18.069L2.07737 9.16966C1.61496 8.73984 0.865242 8.73984 0.402832 9.16966L0.346809 9.22174C-0.115601 9.65156 -0.115601 10.3484 0.346809 10.7783L9.92098 19.6776C10.3834 20.1075 11.1331 20.1075 11.5955 19.6776L11.6516 19.6255Z"/>
+                    </svg>
+                </div>
+                <div class="banner__swiper swiper">
+                    <div class="banner__swiper-wraper swiper-wrapper">
+                        <div class="banner__slide swiper-slide" style="background-image: url(img/banner-1.png);"></div>
+                        <div class="banner__slide swiper-slide" style="background-image: url(img/banner-2.png);"></div>
+                    </div>
+                </div>
+                <div class="banner__next hover">
+                    <svg class="hover" viewBox="0 0 33 20" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 10C0 9.39214 0.530129 8.89938 1.18408 8.89938H29.0098C29.6638 8.89938 30.1939 9.39214 30.1939 10C30.1939 10.6079 29.6638 11.1006 29.0098 11.1006H1.18407C0.530128 11.1006 0 10.6079 0 10Z"/>
+                        <path d="M21.4045 0.322364C21.8669 -0.107455 22.6166 -0.107455 23.079 0.322364L32.6532 9.22174C33.1156 9.65156 33.1156 10.3484 32.6532 10.7783L32.5972 10.8303C32.1347 11.2602 31.385 11.2602 30.9226 10.8303L21.3484 1.93096C20.886 1.50114 20.886 0.80427 21.3484 0.374451L21.4045 0.322364Z"/>
+                        <path d="M21.3484 19.6255C20.886 19.1957 20.886 18.4989 21.3485 18.069L30.9226 9.16966C31.385 8.73984 32.1348 8.73984 32.5972 9.16966L32.6532 9.22174C33.1156 9.65156 33.1156 10.3484 32.6532 10.7783L23.079 19.6776C22.6166 20.1075 21.8669 20.1075 21.4045 19.6776L21.3484 19.6255Z"/>
+                    </svg>
+                </div>
+            </section>
+            <section class="section category grid">
+                <a href="#" class="category__block flex hover" style="background-image: url(img/category-1.png);">
+                    <span class="category__descr">Шины для вилочного погрузчика</span>
+                </a>
+                <a href="#" class="category__block flex hover" style="background-image: url(img/category-2.png);">
+                    <span class="category__descr">Шины для мини-погрузчика</span>
+                </a>
+            </section>
+            <section class="section catalog grid">
+                <div class="catalog__filters flex">
+                    <button class="catalog__position flex hover">
+                        <svg viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.66667 20.3333V17.6667C7.66667 16.7462 8.41286 16 9.33333 16H20.3333C21.2538 16 22 16.7462 22 17.6667V20.3333C22 21.2538 21.2538 22 20.3333 22H9.33333C8.41286 22 7.66667 21.2538 7.66667 20.3333ZM8.66667 20.3333C8.66667 20.7015 8.96514 21 9.33333 21H20.3333C20.7015 21 21 20.7015 21 20.3333V17.6667C21 17.2985 20.7015 17 20.3333 17H9.33333C8.96514 17 8.66667 17.2985 8.66667 17.6667V20.3333Z"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.66255e-07 20.3333L3.49691e-07 17.6667C3.09456e-07 16.7462 0.746192 16 1.66667 16H4.33333C5.25381 16 6 16.7462 6 17.6667V20.3333C6 21.2538 5.25381 22 4.33333 22H1.66667C0.746193 22 5.0649e-07 21.2538 4.66255e-07 20.3333ZM1 20.3333C1 20.7015 1.29848 21 1.66667 21H4.33333C4.70152 21 5 20.7015 5 20.3333V17.6667C5 17.2985 4.70152 17 4.33333 17H1.66667C1.29848 17 1 17.2985 1 17.6667L1 20.3333Z"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.16564e-07 12.3333L0 9.66667C-4.02352e-08 8.74619 0.746192 8 1.66667 8H4.33333C5.25381 8 6 8.74619 6 9.66667V12.3333C6 13.2538 5.25381 14 4.33333 14H1.66667C0.746193 14 1.56799e-07 13.2538 1.16564e-07 12.3333ZM1 12.3333C1 12.7015 1.29848 13 1.66667 13H4.33333C4.70152 13 5 12.7015 5 12.3333V9.66667C5 9.29848 4.70152 9 4.33333 9H1.66667C1.29848 9 1 9.29848 1 9.66667L1 12.3333Z"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.66667 12.3333V9.66667C7.66667 8.74619 8.41286 8 9.33333 8L20.3333 8C21.2538 8 22 8.74619 22 9.66667V12.3333C22 13.2538 21.2538 14 20.3333 14H9.33333C8.41286 14 7.66667 13.2538 7.66667 12.3333ZM8.66667 12.3333C8.66667 12.7015 8.96514 13 9.33333 13H20.3333C20.7015 13 21 12.7015 21 12.3333V9.66667C21 9.29848 20.7015 9 20.3333 9L9.33333 9C8.96514 9 8.66667 9.29848 8.66667 9.66667V12.3333Z"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.66667 4.33333L7.66667 1.66667C7.66667 0.746192 8.41286 5.2106e-07 9.33333 4.80825e-07L20.3333 0C21.2538 -4.02352e-08 22 0.746191 22 1.66667V4.33333C22 5.25381 21.2538 6 20.3333 6L9.33333 6C8.41286 6 7.66667 5.25381 7.66667 4.33333ZM8.66667 4.33333C8.66667 4.70152 8.96514 5 9.33333 5L20.3333 5C20.7015 5 21 4.70152 21 4.33333V1.66667C21 1.29848 20.7015 1 20.3333 1L9.33333 1C8.96514 1 8.66667 1.29848 8.66667 1.66667L8.66667 4.33333Z"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.02656e-07 4.33333L2.86092e-07 1.66667C2.45857e-07 0.746193 0.746192 2.20398e-07 1.66667 1.80163e-07L4.33333 6.35993e-08C5.25381 2.33641e-08 6 0.746192 6 1.66667L6 4.33333C6 5.25381 5.25381 6 4.33333 6H1.66667C0.746193 6 4.42891e-07 5.25381 4.02656e-07 4.33333ZM1 4.33333C1 4.70152 1.29848 5 1.66667 5L4.33333 5C4.70152 5 5 4.70152 5 4.33333V1.66667C5 1.29848 4.70152 1 4.33333 1H1.66667C1.29848 1 1 1.29848 1 1.66667L1 4.33333Z"/>
+                        </svg>
+                    </button>
+                    <button class="catalog__position active flex hover">
+                        <svg viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.8658 0H7.99627C9.02672 0 9.86207 0.835346 9.86207 1.8658V7.99627C9.86207 9.02672 9.02672 9.86207 7.99627 9.86207H1.8658C0.835345 9.86207 0 9.02672 0 7.99627V1.8658C0 0.835345 0.835346 0 1.8658 0ZM1.8658 0.932898C1.35057 0.932898 0.932898 1.35057 0.932898 1.8658V7.99627C0.932898 8.5115 1.35057 8.92917 1.8658 8.92917H7.99627C8.5115 8.92917 8.92917 8.5115 8.92917 7.99627V1.8658C8.92917 1.35057 8.5115 0.932898 7.99627 0.932898H1.8658Z"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.8658 12.1379H7.99627C9.02672 12.1379 9.86207 12.9733 9.86207 14.0037V20.1342C9.86207 21.1647 9.02672 22 7.99627 22H1.8658C0.835345 22 0 21.1647 0 20.1342V14.0037C0 12.9733 0.835346 12.1379 1.8658 12.1379ZM1.8658 13.0708C1.35057 13.0708 0.932898 13.4885 0.932898 14.0037V20.1342C0.932898 20.6494 1.35057 21.0671 1.8658 21.0671H7.99627C8.5115 21.0671 8.92917 20.6494 8.92917 20.1342V14.0037C8.92917 13.4885 8.5115 13.0708 7.99627 13.0708H1.8658Z"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.0037 0H20.1342C21.1647 0 22 0.835346 22 1.8658V7.99627C22 9.02672 21.1647 9.86207 20.1342 9.86207H14.0037C12.9733 9.86207 12.1379 9.02672 12.1379 7.99627V1.8658C12.1379 0.835345 12.9733 0 14.0037 0ZM14.0037 0.932898C13.4885 0.932898 13.0708 1.35057 13.0708 1.8658V7.99627C13.0708 8.5115 13.4885 8.92917 14.0037 8.92917H20.1342C20.6494 8.92917 21.0671 8.5115 21.0671 7.99627V1.8658C21.0671 1.35057 20.6494 0.932898 20.1342 0.932898H14.0037Z"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.0037 12.1379H20.1342C21.1647 12.1379 22 12.9733 22 14.0037V20.1342C22 21.1647 21.1647 22 20.1342 22H14.0037C12.9733 22 12.1379 21.1647 12.1379 20.1342V14.0037C12.1379 12.9733 12.9733 12.1379 14.0037 12.1379ZM14.0037 13.0708C13.4885 13.0708 13.0708 13.4885 13.0708 14.0037V20.1342C13.0708 20.6494 13.4885 21.0671 14.0037 21.0671H20.1342C20.6494 21.0671 21.0671 20.6494 21.0671 20.1342V14.0037C21.0671 13.4885 20.6494 13.0708 20.1342 13.0708H14.0037Z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="catalog__blocks catalog__blocks--block grid">
+                    <div class="catalog__block shadow flex">
+                        <div class="catalog__image" style="background-image: url(img/catalog-1.png);"></div>
+                        <div class="catalog__info grid">
+                            <h2 class="catalog__name">
+                                Шина цельнолитая (суперэластик) для погрузчика 15x4.5-8 (125/75-8) Rubber Wheels Standard (без бурта)
+                            </h2>
+                            <div class="catalog__articul">Артикул: RW010815</div>
+                            <div class="catalog__purchase-area flex">
+                                <div class="catalog__price-area flex">
+                                    <span class="catalog__discount-price">4 370,00 ₽</span>
+                                    <s class="catalog__full-price">5 370,00 ₽</s>
+                                </div>
+                                <a href="#" class="catalog__more hover">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__block shadow flex">
+                        <div class="catalog__image" style="background-image: url(img/catalog-1.png);"></div>
+                        <div class="catalog__info grid">
+                            <h2 class="catalog__name">
+                                Шина цельнолитая (суперэластик) для погрузчика 15x4.5-8 (125/75-8) Rubber Wheels Standard (без бурта)
+                            </h2>
+                            <div class="catalog__articul">Артикул: RW010815</div>
+                            <div class="catalog__purchase-area flex">
+                                <div class="catalog__price-area flex">
+                                    <span class="catalog__price">4 370,00 ₽</span>
+                                </div>
+                                <a href="#" class="catalog__more hover">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__block shadow flex">
+                        <div class="catalog__image" style="background-image: url(img/catalog-1.png);"></div>
+                        <div class="catalog__info grid">
+                            <h2 class="catalog__name">
+                                Шина цельнолитая (суперэластик) для погрузчика 15x4.5-8 (125/75-8) Rubber Wheels Standard (без бурта)
+                            </h2>
+                            <div class="catalog__articul">Артикул: RW010815</div>
+                            <div class="catalog__purchase-area flex">
+                                <div class="catalog__price-area flex">
+                                    <span class="catalog__price">4 370,00 ₽</span>
+                                </div>
+                                <a href="#" class="catalog__more hover">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__block shadow flex">
+                        <div class="catalog__image" style="background-image: url(img/catalog-1.png);"></div>
+                        <div class="catalog__info grid">
+                            <h2 class="catalog__name">
+                                Шина цельнолитая (суперэластик) для погрузчика 15x4.5-8 (125/75-8) Rubber Wheels Standard (без бурта)
+                            </h2>
+                            <div class="catalog__articul">Артикул: RW010815</div>
+                            <div class="catalog__purchase-area flex">
+                                <div class="catalog__price-area flex">
+                                    <span class="catalog__price">4 370,00 ₽</span>
+                                </div>
+                                <a href="#" class="catalog__more hover">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__block shadow flex">
+                        <div class="catalog__image" style="background-image: url(img/catalog-1.png);"></div>
+                        <div class="catalog__info grid">
+                            <h2 class="catalog__name">
+                                Шина цельнолитая (суперэластик) для погрузчика 15x4.5-8 (125/75-8) Rubber Wheels Standard (без бурта)
+                            </h2>
+                            <div class="catalog__articul">Артикул: RW010815</div>
+                            <div class="catalog__purchase-area flex">
+                                <div class="catalog__price-area flex">
+                                    <span class="catalog__price">4 370,00 ₽</span>
+                                </div>
+                                <a href="#" class="catalog__more hover">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__block shadow flex">
+                        <div class="catalog__image" style="background-image: url(img/catalog-1.png);"></div>
+                        <div class="catalog__info grid">
+                            <h2 class="catalog__name">
+                                Шина цельнолитая (суперэластик) для погрузчика 15x4.5-8 (125/75-8) Rubber Wheels Standard (без бурта)
+                            </h2>
+                            <div class="catalog__articul">Артикул: RW010815</div>
+                            <div class="catalog__purchase-area flex">
+                                <div class="catalog__price-area flex">
+                                    <span class="catalog__price">4 370,00 ₽</span>
+                                </div>
+                                <a href="#" class="catalog__more hover">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__block shadow flex">
+                        <div class="catalog__image" style="background-image: url(img/catalog-1.png);"></div>
+                        <div class="catalog__info grid">
+                            <h2 class="catalog__name">
+                                Шина цельнолитая (суперэластик) для погрузчика 15x4.5-8 (125/75-8) Rubber Wheels Standard (без бурта)
+                            </h2>
+                            <div class="catalog__articul">Артикул: RW010815</div>
+                            <div class="catalog__purchase-area flex">
+                                <div class="catalog__price-area flex">
+                                    <span class="catalog__discount-price">4 370,00 ₽</span>
+                                    <s class="catalog__full-price">5 370,00 ₽</s>
+                                </div>
+                                <a href="#" class="catalog__more hover">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__block shadow flex">
+                        <div class="catalog__image" style="background-image: url(img/catalog-1.png);"></div>
+                        <div class="catalog__info grid">
+                            <h2 class="catalog__name">
+                                Шина цельнолитая (суперэластик) для погрузчика 15x4.5-8 (125/75-8) Rubber Wheels Standard (без бурта)
+                            </h2>
+                            <div class="catalog__articul">Артикул: RW010815</div>
+                            <div class="catalog__purchase-area flex">
+                                <div class="catalog__price-area flex">
+                                    <span class="catalog__price">4 370,00 ₽</span>
+                                </div>
+                                <a href="#" class="catalog__more hover">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__block shadow flex">
+                        <div class="catalog__image" style="background-image: url(img/catalog-1.png);"></div>
+                        <div class="catalog__info grid">
+                            <h2 class="catalog__name">
+                                Шина цельнолитая (суперэластик) для погрузчика 15x4.5-8 (125/75-8) Rubber Wheels Standard (без бурта)
+                            </h2>
+                            <div class="catalog__articul">Артикул: RW010815</div>
+                            <div class="catalog__purchase-area flex">
+                                <div class="catalog__price-area flex">
+                                    <span class="catalog__price">4 370,00 ₽</span>
+                                </div>
+                                <a href="#" class="catalog__more hover">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__block shadow flex">
+                        <div class="catalog__image" style="background-image: url(img/catalog-1.png);"></div>
+                        <div class="catalog__info grid">
+                            <h2 class="catalog__name">
+                                Шина цельнолитая (суперэластик) для погрузчика 15x4.5-8 (125/75-8) Rubber Wheels Standard (без бурта)
+                            </h2>
+                            <div class="catalog__articul">Артикул: RW010815</div>
+                            <div class="catalog__purchase-area flex">
+                                <div class="catalog__price-area flex">
+                                    <span class="catalog__price">4 370,00 ₽</span>
+                                </div>
+                                <a href="#" class="catalog__more hover">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__block shadow flex">
+                        <div class="catalog__image" style="background-image: url(img/catalog-1.png);"></div>
+                        <div class="catalog__info grid">
+                            <h2 class="catalog__name">
+                                Шина цельнолитая (суперэластик) для погрузчика 15x4.5-8 (125/75-8) Rubber Wheels Standard (без бурта)
+                            </h2>
+                            <div class="catalog__articul">Артикул: RW010815</div>
+                            <div class="catalog__purchase-area flex">
+                                <div class="catalog__price-area flex">
+                                    <span class="catalog__price">4 370,00 ₽</span>
+                                </div>
+                                <a href="#" class="catalog__more hover">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__block shadow flex">
+                        <div class="catalog__image" style="background-image: url(img/catalog-1.png);"></div>
+                        <div class="catalog__info grid">
+                            <h2 class="catalog__name">
+                                Шина цельнолитая (суперэластик) для погрузчика 15x4.5-8 (125/75-8) Rubber Wheels Standard (без бурта)
+                            </h2>
+                            <div class="catalog__articul">Артикул: RW010815</div>
+                            <div class="catalog__purchase-area flex">
+                                <div class="catalog__price-area flex">
+                                    <span class="catalog__price">4 370,00 ₽</span>
+                                </div>
+                                <a href="#" class="catalog__more hover">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav class="catalog__nav flex">
+                    <a href="#" class="catalog__nav-elem flex active hover">1</a>
+                    <a href="#" class="catalog__nav-elem flex hover">2</a>
+                </nav>
+            </section>
+            <section class="section catalog grid">
+                <div class="catalog__filters flex">
+                    <button class="catalog__position active flex hover">
+                        <svg viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.66667 20.3333V17.6667C7.66667 16.7462 8.41286 16 9.33333 16H20.3333C21.2538 16 22 16.7462 22 17.6667V20.3333C22 21.2538 21.2538 22 20.3333 22H9.33333C8.41286 22 7.66667 21.2538 7.66667 20.3333ZM8.66667 20.3333C8.66667 20.7015 8.96514 21 9.33333 21H20.3333C20.7015 21 21 20.7015 21 20.3333V17.6667C21 17.2985 20.7015 17 20.3333 17H9.33333C8.96514 17 8.66667 17.2985 8.66667 17.6667V20.3333Z"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.66255e-07 20.3333L3.49691e-07 17.6667C3.09456e-07 16.7462 0.746192 16 1.66667 16H4.33333C5.25381 16 6 16.7462 6 17.6667V20.3333C6 21.2538 5.25381 22 4.33333 22H1.66667C0.746193 22 5.0649e-07 21.2538 4.66255e-07 20.3333ZM1 20.3333C1 20.7015 1.29848 21 1.66667 21H4.33333C4.70152 21 5 20.7015 5 20.3333V17.6667C5 17.2985 4.70152 17 4.33333 17H1.66667C1.29848 17 1 17.2985 1 17.6667L1 20.3333Z"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.16564e-07 12.3333L0 9.66667C-4.02352e-08 8.74619 0.746192 8 1.66667 8H4.33333C5.25381 8 6 8.74619 6 9.66667V12.3333C6 13.2538 5.25381 14 4.33333 14H1.66667C0.746193 14 1.56799e-07 13.2538 1.16564e-07 12.3333ZM1 12.3333C1 12.7015 1.29848 13 1.66667 13H4.33333C4.70152 13 5 12.7015 5 12.3333V9.66667C5 9.29848 4.70152 9 4.33333 9H1.66667C1.29848 9 1 9.29848 1 9.66667L1 12.3333Z"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.66667 12.3333V9.66667C7.66667 8.74619 8.41286 8 9.33333 8L20.3333 8C21.2538 8 22 8.74619 22 9.66667V12.3333C22 13.2538 21.2538 14 20.3333 14H9.33333C8.41286 14 7.66667 13.2538 7.66667 12.3333ZM8.66667 12.3333C8.66667 12.7015 8.96514 13 9.33333 13H20.3333C20.7015 13 21 12.7015 21 12.3333V9.66667C21 9.29848 20.7015 9 20.3333 9L9.33333 9C8.96514 9 8.66667 9.29848 8.66667 9.66667V12.3333Z"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.66667 4.33333L7.66667 1.66667C7.66667 0.746192 8.41286 5.2106e-07 9.33333 4.80825e-07L20.3333 0C21.2538 -4.02352e-08 22 0.746191 22 1.66667V4.33333C22 5.25381 21.2538 6 20.3333 6L9.33333 6C8.41286 6 7.66667 5.25381 7.66667 4.33333ZM8.66667 4.33333C8.66667 4.70152 8.96514 5 9.33333 5L20.3333 5C20.7015 5 21 4.70152 21 4.33333V1.66667C21 1.29848 20.7015 1 20.3333 1L9.33333 1C8.96514 1 8.66667 1.29848 8.66667 1.66667L8.66667 4.33333Z"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.02656e-07 4.33333L2.86092e-07 1.66667C2.45857e-07 0.746193 0.746192 2.20398e-07 1.66667 1.80163e-07L4.33333 6.35993e-08C5.25381 2.33641e-08 6 0.746192 6 1.66667L6 4.33333C6 5.25381 5.25381 6 4.33333 6H1.66667C0.746193 6 4.42891e-07 5.25381 4.02656e-07 4.33333ZM1 4.33333C1 4.70152 1.29848 5 1.66667 5L4.33333 5C4.70152 5 5 4.70152 5 4.33333V1.66667C5 1.29848 4.70152 1 4.33333 1H1.66667C1.29848 1 1 1.29848 1 1.66667L1 4.33333Z"/>
+                        </svg>
+                    </button>
+                    <button class="catalog__position flex hover">
+                        <svg viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.8658 0H7.99627C9.02672 0 9.86207 0.835346 9.86207 1.8658V7.99627C9.86207 9.02672 9.02672 9.86207 7.99627 9.86207H1.8658C0.835345 9.86207 0 9.02672 0 7.99627V1.8658C0 0.835345 0.835346 0 1.8658 0ZM1.8658 0.932898C1.35057 0.932898 0.932898 1.35057 0.932898 1.8658V7.99627C0.932898 8.5115 1.35057 8.92917 1.8658 8.92917H7.99627C8.5115 8.92917 8.92917 8.5115 8.92917 7.99627V1.8658C8.92917 1.35057 8.5115 0.932898 7.99627 0.932898H1.8658Z"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.8658 12.1379H7.99627C9.02672 12.1379 9.86207 12.9733 9.86207 14.0037V20.1342C9.86207 21.1647 9.02672 22 7.99627 22H1.8658C0.835345 22 0 21.1647 0 20.1342V14.0037C0 12.9733 0.835346 12.1379 1.8658 12.1379ZM1.8658 13.0708C1.35057 13.0708 0.932898 13.4885 0.932898 14.0037V20.1342C0.932898 20.6494 1.35057 21.0671 1.8658 21.0671H7.99627C8.5115 21.0671 8.92917 20.6494 8.92917 20.1342V14.0037C8.92917 13.4885 8.5115 13.0708 7.99627 13.0708H1.8658Z"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.0037 0H20.1342C21.1647 0 22 0.835346 22 1.8658V7.99627C22 9.02672 21.1647 9.86207 20.1342 9.86207H14.0037C12.9733 9.86207 12.1379 9.02672 12.1379 7.99627V1.8658C12.1379 0.835345 12.9733 0 14.0037 0ZM14.0037 0.932898C13.4885 0.932898 13.0708 1.35057 13.0708 1.8658V7.99627C13.0708 8.5115 13.4885 8.92917 14.0037 8.92917H20.1342C20.6494 8.92917 21.0671 8.5115 21.0671 7.99627V1.8658C21.0671 1.35057 20.6494 0.932898 20.1342 0.932898H14.0037Z"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.0037 12.1379H20.1342C21.1647 12.1379 22 12.9733 22 14.0037V20.1342C22 21.1647 21.1647 22 20.1342 22H14.0037C12.9733 22 12.1379 21.1647 12.1379 20.1342V14.0037C12.1379 12.9733 12.9733 12.1379 14.0037 12.1379ZM14.0037 13.0708C13.4885 13.0708 13.0708 13.4885 13.0708 14.0037V20.1342C13.0708 20.6494 13.4885 21.0671 14.0037 21.0671H20.1342C20.6494 21.0671 21.0671 20.6494 21.0671 20.1342V14.0037C21.0671 13.4885 20.6494 13.0708 20.1342 13.0708H14.0037Z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="catalog__blocks grid">
+                    <div class="catalog__block shadow grid">
+                        <div class="catalog__image" style="background-image: url(img/catalog-1.png);"></div>
+                        <div class="catalog__info grid">
+                            <h2 class="catalog__name">
+                                Шина цельнолитая (суперэластик) для погрузчика 15x4.5-8 (125/75-8) Rubber Wheels Standard (без бурта)
+                            </h2>
+                            <div class="catalog__articul">Артикул: RW010815</div>
+                            <div class="catalog__purchase-area flex">
+                                <div class="catalog__price-area flex">
+                                    <span class="catalog__discount-price">4 370,00 ₽</span>
+                                    <s class="catalog__full-price">5 370,00 ₽</s>
+                                </div>
+                                <a href="#" class="catalog__more hover">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__block shadow grid">
+                        <div class="catalog__image" style="background-image: url(img/catalog-1.png);"></div>
+                        <div class="catalog__info grid">
+                            <h2 class="catalog__name">
+                                Шина цельнолитая (суперэластик) для погрузчика 15x4.5-8 (125/75-8) Rubber Wheels Standard (без бурта)
+                            </h2>
+                            <div class="catalog__articul">Артикул: RW010815</div>
+                            <div class="catalog__purchase-area flex">
+                                <div class="catalog__price-area flex">
+                                    <span class="catalog__price">4 370,00 ₽</span>
+                                </div>
+                                <a href="#" class="catalog__more hover">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__block shadow grid">
+                        <div class="catalog__image" style="background-image: url(img/catalog-1.png);"></div>
+                        <div class="catalog__info grid">
+                            <h2 class="catalog__name">
+                                Шина цельнолитая (суперэластик) для погрузчика 15x4.5-8 (125/75-8) Rubber Wheels Standard (без бурта)
+                            </h2>
+                            <div class="catalog__articul">Артикул: RW010815</div>
+                            <div class="catalog__purchase-area flex">
+                                <div class="catalog__price-area flex">
+                                    <span class="catalog__price">4 370,00 ₽</span>
+                                </div>
+                                <a href="#" class="catalog__more hover">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__block shadow grid">
+                        <div class="catalog__image" style="background-image: url(img/catalog-1.png);"></div>
+                        <div class="catalog__info grid">
+                            <h2 class="catalog__name">
+                                Шина цельнолитая (суперэластик) для погрузчика 15x4.5-8 (125/75-8) Rubber Wheels Standard (без бурта)
+                            </h2>
+                            <div class="catalog__articul">Артикул: RW010815</div>
+                            <div class="catalog__purchase-area flex">
+                                <div class="catalog__price-area flex">
+                                    <span class="catalog__price">4 370,00 ₽</span>
+                                </div>
+                                <a href="#" class="catalog__more hover">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__block shadow grid">
+                        <div class="catalog__image" style="background-image: url(img/catalog-1.png);"></div>
+                        <div class="catalog__info grid">
+                            <h2 class="catalog__name">
+                                Шина цельнолитая (суперэластик) для погрузчика 15x4.5-8 (125/75-8) Rubber Wheels Standard (без бурта)
+                            </h2>
+                            <div class="catalog__articul">Артикул: RW010815</div>
+                            <div class="catalog__purchase-area flex">
+                                <div class="catalog__price-area flex">
+                                    <span class="catalog__price">4 370,00 ₽</span>
+                                </div>
+                                <a href="#" class="catalog__more hover">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__block shadow grid">
+                        <div class="catalog__image" style="background-image: url(img/catalog-1.png);"></div>
+                        <div class="catalog__info grid">
+                            <h2 class="catalog__name">
+                                Шина цельнолитая (суперэластик) для погрузчика 15x4.5-8 (125/75-8) Rubber Wheels Standard (без бурта)
+                            </h2>
+                            <div class="catalog__articul">Артикул: RW010815</div>
+                            <div class="catalog__purchase-area flex">
+                                <div class="catalog__price-area flex">
+                                    <span class="catalog__price">4 370,00 ₽</span>
+                                </div>
+                                <a href="#" class="catalog__more hover">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav class="catalog__nav flex">
+                    <a href="#" class="catalog__nav-elem flex active hover">1</a>
+                    <a href="#" class="catalog__nav-elem flex hover">2</a>
+                    <a href="#" class="catalog__nav-elem flex hover">3</a>
+                    <a href="#" class="catalog__nav-elem flex hover">4</a>
+                </nav>
+            </section>
+            <section class="section pluses grid">
+                <div class="pluses__block grid">
+                    <h1 class="pluses__title pluses__title--1">Производство</h1>
+                    <div class="pluses__content pluses__content--1">
+                        <img src="img/pluses/1/1.png" style="float: left; width: 400px;">
+                        <p class="pluses__descr">
+                            Уже много лет наша компания специализируется на разработке и производстве резино-технических изделий, но только в 2014 году мы стали развивать новое направление – производство цельнолитых шин (гусматик) для вилочных погрузчиков под брендом «Rubber Wheels».
+                        </p>
+                        <p class="pluses__descr">
+                            Компания Rubber Wheels имеет собственное производство в центральной части России, что является большим преимуществом для нас и наших клиентов:
+                        </p>
+                        <div class="pluses__points grid">
+                            <div class="pluses__point flex">
+                                Для производства мы выбираем только лучшее сырье;
+                            </div>
+                            <div class="pluses__point flex">
+                                Мы досконально знаем свою продукцию и все этапы ее изготовления;
+                            </div>
+                            <div class="pluses__point flex">
+                                Наличие собственного производства освобождает нас от оплаты дорогостоящих посреднических услуг;
+                            </div>
+                        </div>
+                        <div class="pluses__points grid">
+                            <div class="pluses__point flex">
+                                Компания постоянно проводит испытания своих шин в собственных, а также независимых лабораториях, например, в ООО «НТЦ «НИИШП», где все тесты проводятся в строгом соответствии с Европейскими нормами и стандартами;
+                            </div>
+                            <div class="pluses__point flex">
+                                Выгодное местоположение нашего производства уменьшает расходы по логистике;
+                            </div>
+                            <div class="pluses__point flex">
+                                Rubber Wheels постоянно инвестирует в новые технологии, инновационные машины и производственные линии;
+                            </div>
+                            <div class="pluses__point flex">
+                                Абсолютно все модели производимых цельнолитых шин являются оригинальной разработкой «Rubber Wheels».
+                            </div>
+                        </div>
+                        <p class="pluses__descr">
+                            Компания нацелена на удовлетворение потребностей наших клиентов, в любой момент мы можем изменить настройки на наших производственных линиях для изготовления запрашиваемых продуктов.
+                            <br>На данный момент компания Rubber Wheels разработала свою первую линейку цельнолитых шин «Standard». Учитывая сложившуюся ситуацию на рынке, Standard – лучшее решение для наших клиентов благодаря высочайшему качеству и конкурентоспособной цене.
+                        </p>
+                    </div>
+                </div>
+                <div class="pluses__block grid">
+                    <h1 class="pluses__title pluses__title--1">Гарантия и качество</h1>
+                    <div class="pluses__content pluses__content--2 grid">
+                        <div class="pluses__left-area grid">
+                            <div class="pluses__title pluses__title--2">Технология изготовления Rubber Wheels Standard</div>
+                            <img src="img/pluses/2/1.png" alt="" class="pluses__img">
+                        </div>
+                        <div class="pluses__right-area grid">
+                            <div class="pluses__title pluses__title--2">Технология изготовления Rubber Wheels Premium</div>
+                            <img src="img/pluses/2/2.png" alt="" class="pluses__img">
+                        </div>
+                    </div>
+                </div>
+                <div class="pluses__block grid">
+                    <h1 class="pluses__title pluses__title--1">Информация</h1>
+                    <div class="pluses__content pluses__content--3 grid">
+                        <div class="pluses__top grid">
+                            <div class="pluses__left-area grid">
+                                <div class="pluses__title pluses__title--2">Транспортирование и хранение</div>
+                                <div class="pluses__points grid">
+                                    <div class="pluses__point flex">
+                                        Шины транспортируют всеми видами транспорта в соответствии с правилами перевозки грузов.
+                                    </div>
+                                    <div class="pluses__point flex">
+                                        При хранении более 10 суток шины должны находиться в помещении при температуре от минус 10 до плюс 30 °С, на расстоянии не менее 1 м от отопительных приборов.
+                                    </div>
+                                    <div class="pluses__point flex">
+                                        Допускается укладывать шины в стопы высотой не более 1,5 м. При транспортировании и хранении шины не должны подвергаться действию масел, бензина и других разрушающих резину веществ.
+                                    </div>
+                                </div>
+                                <div class="pluses__title pluses__title--2">Указания по эксплуатации</div>
+                                <div class="pluses__points grid">
+                                    <div class="pluses__point flex">
+                                        При эксплуатации шин не допускаются пробуксовка, рывки, резкие повороты и резкое торможение, приводящие к быстрому износу резинового массива, а также совместный монтаж на одну ось шин с разной степенью износа массива.
+                                    </div>
+                                    <div class="pluses__point flex">
+                                        Шины должны эксплуатироваться по ровным покрытиям и поверхностям в условиях, исключающих их механические повреждения и попадание на поверхность шины нефтепродуктов (масел, смазок) и других веществ, разрушающих резину.
+                                    </div>
+                                    <div class="pluses__point flex">
+                                        При работе в горячих цехах шины должны быть защищены от непосредственного теплового излучения.
+                                    </div>
+                                    <div class="pluses__point flex">
+                                        Потребитель должен вести журнал учета и отмечать в нём: дату установки шины, обозначение, неделю, год изготовления, номер шины, место расположения, пройденный километраж или количество часов работы и дату снятия шины.
+                                    </div>
+                                    <div class="pluses__point flex">
+                                        Рекомендуется использовать в помещениях с прямыми твердыми полами из бетона, асфальта и других материалов. Не рекомендуется использовать на «сыпучих» покрытиях: песке, гравии, снегу и других. Не предназначены для перевозки хрупких грузов из-за низких демпфирующих свойств.
+                                    </div>
+                                    <div class="pluses__point flex">
+                                        Не допускается превышение разрешенной нагрузки на шину и превышение установленного скоростного режима.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pluses__right-area grid">
+                                <div class="pluses__title pluses__title--2">Варианты основания шины и дисков</div>
+                                <img src="img/pluses/3/1.png" alt="" class="pluses__img">
+                            </div>
+                        </div>
+                        <div class="pluses__bottom grid">
+                            <img src="img/pluses/3/2.png" alt="" class="pluses__img">
+                            <div class="pluses__right-area grid">
+                                <div class="pluses__title pluses__title--2">Варианты основания шины и дисков</div>
+                                <p class="pluses__descr">
+                                    Компания Rubber Wheels оказывает услугу по профессиональному монтажу и демонтажу цельнолитых шин в строгом соответствии с технологией, исключающей перекос резины на посадочной поверхности диска. Профессиональный монтаж шины продлевает срок ее эксплуатации.
+                                    <br>Для этого мы располагаем специализированным прессом с рабочим усилием 120 тон, что позволяет монтировать шины с максимальным посадочным диаметром 15 дюймов и всей необходимой оснасткой.
+                                    <br>Данные работы выполняются квалифицированными специалистами.
+                                    <br>Выполняем запрессовку шин без бурта/с буртом, на разборные диски из двух половин/сварные диски, с запорным кольцом/без кольца.
+                                    <br>При покупке цельнолитых шин Rubber Wheels услуга на монтаж и демонтаж бесплатно!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__wrapper grid">
+                <div class="footer__top flex">
+                    <a href="#"><img src="img/footer-logo.svg" alt="" class="footer__logo"></a>
+                    <div class="footer__nav-area flex">
+                        <nav class="footer__nav grid">
+                            <legend class="footer__legend">Навигация</legend>
+                            <div class="footer__nav-content grid">
+                                <a href="#" class="footer__nav-elem hover">Главная</a>
+                                <a href="#" class="footer__nav-elem hover">О компании</a>
+                                <a href="#" class="footer__nav-elem hover">Стать партнёром</a>
+                                <a href="#" class="footer__nav-elem hover">Контакты</a>
+                            </div>
+                        </nav>
+                        <nav class="footer__nav grid">
+                            <legend class="footer__legend">Контакты</legend>
+                            <div class="footer__nav-content grid">
+                                <a href="tel:+78007071797" class="footer__nav-elem hover">8 (800) 707-1-797</a>
+                                <a href="mailto:info@rubberwheels.ru" class="footer__nav-elem hover">info@rubberwheels.ru</a>
+                                <div class="footer__nav-elem">г. Москва, Щёлковское шоссе, д. 5, стр. 1</div>
+                                <div class="footer__nav-elem">Режим работы: Пн-Пт 9.00-19.00</div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div class="footer__sparator"></div>
+                <p class="footer__descr">
+                    © 2014 — 2023 ООО «ТПК «РЕЗИНОВЫЕ КОЛЕСА», Все права защищены.
+                </p>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="js/swiper.min.js"></script>
+    <script src="js/style.js"></script>
+</body>
+</html>
